@@ -1,7 +1,7 @@
 DATASET: LoaderZLS
-ROOT: data/datasets/cocostuff/dataset
+ROOT: data/datasets/voc12/dataset
 IGNORE_LABEL: 255
-VAL_SIZE: 2000
+VAL_SIZE: 500
 
 IMAGE:
     MEAN:
@@ -16,20 +16,19 @@ SPLIT:
     TRAIN: train
     TEST: novel
 
-
 # Model definition
-N_CLASSES: 182
+N_CLASSES: 20
 N_BLOCKS: [3, 4, 23, 3]
 PYRAMIDS: [6, 12, 18, 24]
 
 # Training setting
 BATCH_SIZE:
-    TRAIN: 5
-    TEST: 20
+    TRAIN: 10
+    TEST: 120
 ITER_MAX: 2000
-ITER_SIZE: 2
-ITER_SAVE: [ ]
-ITER_TB: 2000
+ITER_SIZE: 1
+ITER_SAVE: []
+ITER_TB: 10
 LR_DECAY: 10
 LR: 1.0e-4
 MOMENTUM: 0.9
@@ -37,8 +36,8 @@ OPTIMIZER: sgd
 POLY_POWER: 0.9
 WEIGHT_DECAY: 5.0e-4
 
-INIT_MODEL: data/models/deeplab_resnet101/init/deeplabv2_resnet101_init.pth
+INIT_MODEL: /BS/subhc/work/zss/deeplab-pytorch/data/models/deeplab_resnet101/init/deeplabv2_resnet101_init.pth
 SAVE_DIR: .
-LOG_DIR: runs/cocostuff
+LOG_DIR: runs/pascal-voc
 NUM_WORKERS: 0
 WARP_IMAGE: True

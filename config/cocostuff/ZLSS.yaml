@@ -13,7 +13,6 @@ IMAGE:
 
 SPLIT:
     TRAIN: train
-    VAL: val
     TEST: novel
 
 
@@ -24,11 +23,11 @@ PYRAMIDS: [6, 12, 18, 24]
 
 # Training setting
 BATCH_SIZE:
-    TRAIN: 10
+    TRAIN: 5
     TEST: 20
 ITER_MAX: 100000
-ITER_SIZE: 1
-ITER_SAVE: 50000
+ITER_SIZE: 2
+ITER_SAVE: 10000
 ITER_TB: 100
 LR_DECAY: 10
 LR: 2.5e-4
