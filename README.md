@@ -19,9 +19,12 @@ done < val.txt
 You can find the splits information in [data/datasets](/data/datasets) folder. Please see [splits.ipynb](splits.ipynb) for an example on how to use these files. 
 
 ##### Initialization Model:
-DeepLab initialization should be done using an ImageNet pretrained ResNet. You can use `ResNet-101-model.caffemodel` from [here](https://github.com/KaimingHe/deep-residual-networks#models). Use [this](https://github.com/kazuto1011/deeplab-pytorch#initial-weights) to convert it to a pytorch model.
+DeepLab initialization should be done using an ImageNet pretrained ResNet. You can use `ResNet-101-model.caffemodel` from [here](https://github.com/KaimingHe/deep-residual-networks#models). Use [this](https://github.com/kazuto1011/deeplab-pytorch#initial-weights) to convert it to a pytorch model. A copy of the convert.py file is included with this project.
 ##### Hyperparameters:
 You can find the hyperparameters used for our paper in the [config](config) folder. 
+
+##### Acknowledgement
+Many thanks to Kazuto Nakashima for creating [deeplab-pytorch](https://github.com/kazuto1011/deeplab-pytorch).
 
 ##### Citation:
 If you find this useful, please cite our work as follows:
