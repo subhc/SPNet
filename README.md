@@ -23,7 +23,7 @@ DeepLab initialization should be done using an ImageNet pretrained ResNet. You c
 ##### Hyperparameters:
 You can find the hyperparameters used for our paper in the [config](config) folder. 
 
-##### Acknowledgement
+##### Acknowledgement:
 Many thanks to Kazuto Nakashima for creating [deeplab-pytorch](https://github.com/kazuto1011/deeplab-pytorch).
 
 ##### Citation:
